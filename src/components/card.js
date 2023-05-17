@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
-
+import Image from 'next/image'
 export default function Card({title,description,images,id}) {
   return (
 <div className="max-w-sm  float-left w-96 h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <Link href="#">
-        <img className="rounded-t-lg w-full h-96" src={images} alt="" />
+        <Image className="rounded-t-lg w-full h-96" src={images} alt="" />
     </Link>
     <div className="p-5">
         <Link href="#">
