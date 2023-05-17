@@ -14,7 +14,7 @@ export default async function Product() {
 
     <div className='flex justify-center  min-h-screen flex-wrap p-24 font-bold'>{results.map(el=>(
 
-        <Card id={el.id} title={el.title} description={el.description} images={el.images[0]}/> 
+        <Card key={el.id} id={el.id} title={el.title} description={el.description} images={el.images[0]}/> 
     ))}</div>
   )
 }
